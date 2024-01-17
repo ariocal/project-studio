@@ -1,0 +1,162 @@
+/*----------Custom Properties---------------------*/
+:root{
+--first-color: rgb(254,56,46);
+--first-alpha-color: rgba(254,56,46,0.75);
+--second-color: rgb(55, 5, 105);
+--second-alpha-color: rgba(55,5,105,0.65);
+--third-color: rgb(11, 49, 100);
+--third-alpha-color: rgba(11,49,100,0.75);
+
+--link-color: rgb(240, 143, 17);
+--link-alpha-color: rgba(255,167,52,0.75);
+
+--bg-color: rgb(245, 245, 245);
+--bg-alpha-color: rgba(245, 245, 245, 0.75);
+
+}
+
+/*----------------Reset Styles------------------*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    color: var(--link-color);
+    transition: all 0.3s ease-out;
+}
+a:hover{
+    color: var(--first-color);
+}
+
+
+/*----------------------Bootstrap Styles------------------*/
+.navbar-brand img{
+    width: auto;
+    height: 2.2rem;
+
+}
+.carousel-caption{
+    z-index: 1;
+}
+
+.navbar-toggle:hover{
+    filter: invert(21%) sepia(85%) saturate(3309%) hue-rotate(319deg) brightness(79%) contrast(123%);
+    transition: all 0.3s ease-out;
+    opacity: 0.75;
+    background-color: var(--bg-alpha-color);
+}
+
+.bg-body-tertiary{
+    background-color: rgb(42, 41, 41) !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+filter: invert(6%) sepia(92%) saturate(6116%) hue-rotate(241deg) brightness(78%) contrast(103%);
+
+}
+
+.dropdown-item{
+    color: var(--first-alpha-color);
+    font-weight: bold;
+}
+
+.dropdown-item:hover{
+    color: var(--third-alpha-color);
+    transition: all 0.3s ease-out;
+}
+
+.nav-item{
+
+    transition: all 0.3s ease-out;
+}
+
+.nav-item:hover{
+background-color: var(--first-alpha-color);
+}
+
+.nav-link{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.nav-link:hover{
+    color: var(--bs-white);
+}
+
+
+/*--------------------My Styles------------------*/
+.text-first-color{
+    color: var(--first-color);
+}
+.bg-gradient-orange-purple{
+    background-color: rgba(55, 5, 105);
+    background-image: linear-gradient(135deg, 
+    rgba(254, 56, 46, 0.91),
+    rgba(240, 143, 17, 0.97) 79%);
+
+    background-image: linear-gradient(131deg, 
+    rgba(254, 56, 46,0.92),
+    rgba(255, 204, 51, 1)); 
+
+}
+.bg-hero-image{
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-color{
+    background-color: var(--bg-color);
+}
+.bg-alpha-color{
+    background-color: var(--bg-alpha-color);
+}
+.bg-third-color{
+    background-color: var(--second-color);
+}
+
+.bg-second-alpha-color{
+    background-color: var(--second-alpha-color);
+}
+.cursor-pointer{
+    cursor: pointer;
+    text-decoration: none;
+}
+.img-g{
+    height: 39rem;
+    width: auto;
+}
+
+.text-third{
+    color: var(--first-color);
+    text-decoration: none;
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .nav-item:hover{
+        background-color: transparent;
+        }
+        
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+ }
